@@ -17,8 +17,6 @@ enum Sections: Int {
     case topRated = 4
 }
 
-
-
 class HomeViewController: UIViewController {
     
     
