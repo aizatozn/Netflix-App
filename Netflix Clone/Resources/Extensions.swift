@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 extension String {
     func capitalizeFirstletter() -> String {
         return self.prefix(1).uppercased() + self.lowercased().dropFirst()
