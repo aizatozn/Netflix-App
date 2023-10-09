@@ -7,8 +7,6 @@
 
 import UIKit
 
-
-
 enum Sections: Int {
     case TrendingMovies = 0
     case TrendingTv = 1
@@ -17,12 +15,8 @@ enum Sections: Int {
     case topRated = 4
 }
 
+final class HomeViewController: UIViewController {
 
-
-class HomeViewController: UIViewController {
-    
-     
-    
     private var randomTrendingMovie: Title?
     private var headerView: HeroHeaderUIView?
     
@@ -63,13 +57,8 @@ class HomeViewController: UIViewController {
                 print (erorr.localizedDescription)
             }
         }
-        
-        
-        
     }
-    
-    
-    
+
     private func configureNavbar() {
         var image = UIImage(named: "netflixLogo")
         image = image?.withRenderingMode(.alwaysOriginal)
@@ -81,18 +70,12 @@ class HomeViewController: UIViewController {
         ]
         navigationController?.navigationBar.tintColor = .white
     }
-    
-    
-    
+
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         homeFeedTable.frame = view.bounds
     }
-    
-    
-    
 }
-
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
@@ -123,9 +106,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                     print(error.localizedDescription)
                 }
             })
-            
-            
-            
+
         case Sections.TrendingTv.rawValue:
             APICaller.shared.getTrendingTvs { result in
                 switch result {
@@ -135,6 +116,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                     print(error.localizedDescription)
                 }
             }
+
         case Sections.Popular.rawValue:
             APICaller.shared.getPopular { result in
                 switch result {
@@ -144,6 +126,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                     print(error.localizedDescription)
                 }
             }
+
         case Sections.Upcoming.rawValue:
                                                 
             APICaller.shared.getUpcomingMovies { result in
@@ -168,7 +151,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
                                                 
         }
-        
         return cell
     }
     
@@ -201,8 +183,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
  }
 
-
-
 extension HomeViewController: CollectionViewTableViewCellDelegate {
     func collectionViewTableViewCellDidTapCell(_ cell: CollectionViewTableViewCell, viewModel: TitlePreviewViewModel) {
         DispatchQueue.main.async { [weak self] in
@@ -212,5 +192,3 @@ extension HomeViewController: CollectionViewTableViewCellDelegate {
         }
     }
 }
-
-

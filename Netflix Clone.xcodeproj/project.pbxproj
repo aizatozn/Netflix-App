@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F12D67CD2AD3E83900660C42 /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D67CC2AD3E83900660C42 /* DownloadsViewController.swift */; };
 		F19FF4FE2AD2AF2E000E041D /* NetflixCloneModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F19FF4FC2AD2AF2E000E041D /* NetflixCloneModel.xcdatamodeld */; };
 		F19FF5002AD2BCDC000E041D /*  DataPersistenceManager .swift in Sources */ = {isa = PBXBuildFile; fileRef = F19FF4FF2AD2BCDC000E041D /*  DataPersistenceManager .swift */; };
 		F1C45C9F2AB59F4800C609EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C45C9E2AB59F4800C609EE /* AppDelegate.swift */; };
@@ -18,7 +19,6 @@
 		F1C45CB42AB5A4DF00C609EE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C45CB32AB5A4DF00C609EE /* HomeViewController.swift */; };
 		F1C45CB62AB5A55000C609EE /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C45CB52AB5A55000C609EE /* UpcomingViewController.swift */; };
 		F1C45CB82AB5A5C900C609EE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C45CB72AB5A5C900C609EE /* SearchViewController.swift */; };
-		F1C45CBA2AB5A60300C609EE /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C45CB92AB5A60300C609EE /* DownloadsViewController.swift */; };
 		F1C45CC12AB5F85F00C609EE /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C45CC02AB5F85F00C609EE /* CollectionViewTableViewCell.swift */; };
 		F1C45CC32AB715D200C609EE /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C45CC22AB715D200C609EE /* HeroHeaderUIView.swift */; };
 		F1C45CC52AB8947F00C609EE /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C45CC42AB8947F00C609EE /* APICaller.swift */; };
@@ -36,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F12D67CC2AD3E83900660C42 /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
 		F19FF4FD2AD2AF2E000E041D /* NetflixCloneModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NetflixCloneModel.xcdatamodel; sourceTree = "<group>"; };
 		F19FF4FF2AD2BCDC000E041D /*  DataPersistenceManager .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " DataPersistenceManager .swift"; sourceTree = "<group>"; };
 		F1C45C9B2AB59F4800C609EE /* Netflix Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Netflix Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,7 +50,6 @@
 		F1C45CB32AB5A4DF00C609EE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F1C45CB52AB5A55000C609EE /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
 		F1C45CB72AB5A5C900C609EE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		F1C45CB92AB5A60300C609EE /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
 		F1C45CC02AB5F85F00C609EE /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 		F1C45CC22AB715D200C609EE /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
 		F1C45CC42AB8947F00C609EE /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
@@ -175,7 +175,7 @@
 				F1C45CB52AB5A55000C609EE /* UpcomingViewController.swift */,
 				F1C45CB72AB5A5C900C609EE /* SearchViewController.swift */,
 				F1C45CA22AB59F4800C609EE /* MainTabBarViewController.swift */,
-				F1C45CB92AB5A60300C609EE /* DownloadsViewController.swift */,
+				F12D67CC2AD3E83900660C42 /* DownloadsViewController.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -269,13 +269,13 @@
 			files = (
 				F1C45CD42ABF46FA00C609EE /* TitleTableViewCell.swift in Sources */,
 				F1C45CB82AB5A5C900C609EE /* SearchViewController.swift in Sources */,
+				F12D67CD2AD3E83900660C42 /* DownloadsViewController.swift in Sources */,
 				F1C45CCD2ABB4C3800C609EE /* TitleCollectionViewCell.swift in Sources */,
 				F1C45CA32AB59F4800C609EE /* MainTabBarViewController.swift in Sources */,
 				F1C45CC12AB5F85F00C609EE /* CollectionViewTableViewCell.swift in Sources */,
 				F1C45CC52AB8947F00C609EE /* APICaller.swift in Sources */,
 				F19FF4FE2AD2AF2E000E041D /* NetflixCloneModel.xcdatamodeld in Sources */,
 				F1C45CC32AB715D200C609EE /* HeroHeaderUIView.swift in Sources */,
-				F1C45CBA2AB5A60300C609EE /* DownloadsViewController.swift in Sources */,
 				F1C45C9F2AB59F4800C609EE /* AppDelegate.swift in Sources */,
 				F1C45CD82AC0319E00C609EE /* SearchResultsViewController.swift in Sources */,
 				F1C45CC92AB943CE00C609EE /* Extensions.swift in Sources */,
@@ -363,7 +363,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -417,7 +417,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
