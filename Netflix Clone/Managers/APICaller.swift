@@ -21,9 +21,7 @@ enum APIError: Error{
 
 class APICaller {
     static let shared = APICaller()
-    
-    
-    
+
     func getTrendingMovies(completion: @escaping (Result<[Title], Error>) -> Void) {
         guard let url = URL(string: "\(Constants.baseURL)/3/trending/movie/day?api_key=\(Constants.API_KEY)") else {return}
         let task = URLSession.shared.dataTask(with: URLRequest(url: url)) {data, _, error in

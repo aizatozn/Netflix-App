@@ -2,7 +2,7 @@
 //  DownloadsViewController.swift
 //  Netflix
 //
-//  Created by Abdulmajit Kubatbekov on 25.11.22.
+//  Created by Aizat Ozbekova on 16/9/23.
 //
 
 import UIKit

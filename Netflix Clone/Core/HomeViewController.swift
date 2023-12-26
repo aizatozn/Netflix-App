@@ -60,7 +60,7 @@ final class HomeViewController: UIViewController {
     }
 
     private func configureNavbar() {
-        var image = UIImage(named: "netflixLogo")
+        var image = UIImage(named: "saelLogo")
         image = image?.withRenderingMode(.alwaysOriginal)
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .done, target: self, action: nil)
         
